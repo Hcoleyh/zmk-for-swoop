@@ -24,6 +24,11 @@
             require-prior-idle-ms = <100>;
             flavor = "balanced";
         };
+        &lt {
+            tapping-term-ms = <200>;
+            quick-tap-ms = <160>;
+            require-prior-idle-ms = <100>;
+        }
     };
 
     combos {
