@@ -15,8 +15,9 @@
 
 &lt {
     tapping-term-ms = <200>;
-    quick-tap-ms = <160>;
-    require-prior-idle-ms = <100>;
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <80>;
+    flavor = "tap-preferred";
 };
 
 / {
@@ -25,10 +26,10 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
-            quick-tap-ms = <160>;
-            require-prior-idle-ms = <100>;
-            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <80>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -38,67 +39,67 @@
         combo_esc {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
-            timeout-ms = <80>;
+            timeout-ms = <100>;
         };
 
         combo_lpar {
             bindings = <&kp LPAR>;
             key-positions = <2 3>;
-            timeout-ms = <80>;
+            timeout-ms = <100>;
         };
         combo_rpar {
             bindings = <&kp RPAR>;
             key-positions = <6 7>;
-            timeout-ms = <80>;
+            timeout-ms = <100>;
         };
 
         combo_lbkt {
             bindings = <&kp LBKT>;
             key-positions = <21 22>;
-            timeout-ms = <80>;
+            timeout-ms = <100>;
         };
         combo_rbkt {
             bindings = <&kp RBKT>;
             key-positions = <27 28>;
-            timeout-ms = <80>;
+            timeout-ms = <100>;
         };
 
         combo_lbrc {
             bindings = <&kp LBRC>;
             key-positions = <22 23>;
-            timeout-ms = <80>;
+            timeout-ms = <100>;
         };
         combo_rbrc {
             bindings = <&kp RBRC>;
             key-positions = <26 27>;
-            timeout-ms = <80>;
+            timeout-ms = <100>;
         };
 
         combo_minus {
             bindings = <&kp MINUS>;
             key-positions = <2 7>;
-            timeout-ms = <80>;
+            timeout-ms = <100>;
         };
         combo_under {
             bindings = <&kp UNDER>;
             key-positions = <3 6>;
-            timeout-ms = <80>;
+            timeout-ms = <100>;
         };
 
         combo_sqt {
             bindings = <&kp SQT>;
             key-positions = <20 21>;
-            timeout-ms = <80>;
+            timeout-ms = <100>;
         };
         combo_dqt {
             bindings = <&kp DQT>;
             key-positions = <28 29>;
-            timeout-ms = <80>;
+            timeout-ms = <100>;
         };
         combo_bspc {
             bindings = <&kp BSPC>;
             key-positions = <7 8>;
-            timeout-ms = <80>;
+            timeout-ms = <100>;
         };
 
     };
