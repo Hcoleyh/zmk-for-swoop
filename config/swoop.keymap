@@ -4,6 +4,11 @@
  * SPDX-License-Identifier: MIT
  */
 
+ //   0  1  2  3  4    5  6  7  8  9
+ //  10 11 12 13 14   15 16 17 18 19
+ //  20 21 22 23 24   25 26 27 28 29
+ //           30 31   32 33
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -82,7 +87,7 @@
         };
         combo_under {
             bindings = <&kp UNDER>;
-            key-positions = <3 6>;
+            key-positions = <22 27>;
             timeout-ms = <70>;
         };
 
@@ -113,19 +118,19 @@
         base {
             display-name = "Base";
             bindings = <
-&kp Q            &kp W            &kp E         &kp R              &kp T    &kp Y  &kp U               &kp I         &kp O        &kp P
-&hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G    &kp H  &hm RIGHT_SHIFT J  &hm RCTRL K  &hm RALT L  &hm RIGHT_GUI SEMI
-&kp Z            &kp X            &kp C         &kp V              &kp B    &kp N  &kp M               &kp COMMA     &kp DOT      &kp SLASH
-                &lt LSET 0  &lt LNUM SPACE  &hm LCTRL TAB    &hm RIGHT_SHIFT ENTER  &lt LSYM BSPC  &lt LSET 0
+&kp Q       &kp W       &kp E        &kp R         &kp T    &kp Y  &kp U         &kp I        &kp O       &kp P
+&hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHIFT F  &kp G    &kp H  &hm RSHIFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMI
+&kp Z       &kp X       &kp C        &kp V         &kp B    &kp N  &kp M         &kp COMMA    &kp DOT     &kp SLASH
+                &lt LSET 0  &lt LNUM SPACE  &hm LCTRL TAB    &hm RSHIFT ENTER  &lt LSYM BSPC  &lt LSET 0
             >;
         };
 
         number {
             display-name = "NUM";
             bindings = <
-&kp N1            &kp N2            &kp N3         &kp N4              &kp N5   &kp N6     &kp N7    &kp N8     &kp N9     &kp N0
-&hm LEFT_GUI F1  &hm LEFT_ALT F2  &hm LCTRL F3  &hm LEFT_SHIFT F4  &kp F5   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp F11
-&kp F6            &kp F7            &kp F8         &kp F9              &kp F10  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp F12
+&kp F1       &kp F2       &kp F3        &kp F4         &kp F5     &kp HOME  &kp PG_DN      &kp PG_UP     &kp END      &kp F12
+&hm LGUI N1  &hm LALT N2  &hm LCTRL N3  &hm LSHIFT N4  &kp N5     &kp N6    &hm RSHIFT N7  &hm RCTRL N8  &hm RALT N9  &hm RGUI N0
+&kp F6       &kp F7       &kp F8        &kp F9         &kp F10    &kp LEFT  &kp DOWN       &kp UP        &kp RIGHT    &kp F11
                 &none  &none  &none    &kp DEL  &lt LSET BSPC  &none
             >;
         };
