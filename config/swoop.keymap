@@ -93,12 +93,12 @@
 
         combo_sqt {
             bindings = <&kp SQT>;
-            key-positions = <20 21>;
+            key-positions = <23 26>;
             timeout-ms = <70>;
         };
         combo_dqt {
             bindings = <&kp DQT>;
-            key-positions = <28 29>;
+            key-positions = <22 27>;
             timeout-ms = <70>;
         };
         combo_bspc {
