@@ -47,13 +47,13 @@
             timeout-ms = <70>;
         };
 
-        combo_lpar {
-            bindings = <&kp LPAR>;
+        combo_lbrc {
+            bindings = <&kp LBRC>;
             key-positions = <2 3>;
             timeout-ms = <70>;
         };
-        combo_rpar {
-            bindings = <&kp RPAR>;
+        combo_rbrc {
+            bindings = <&kp RBRC>;
             key-positions = <6 7>;
             timeout-ms = <70>;
         };
@@ -69,13 +69,13 @@
             timeout-ms = <70>;
         };
 
-        combo_lbrc {
-            bindings = <&kp LBRC>;
+        combo_lpar {
+            bindings = <&kp LPAR>;
             key-positions = <22 23>;
             timeout-ms = <70>;
         };
-        combo_rbrc {
-            bindings = <&kp RBRC>;
+        combo_rpar {
+            bindings = <&kp RPAR>;
             key-positions = <26 27>;
             timeout-ms = <70>;
         };
