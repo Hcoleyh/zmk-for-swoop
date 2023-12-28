@@ -9,6 +9,9 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config BT_CTLR_PHY_2M
+    default n
+
 endif
 
 if SHIELD_SWOOP_LEFT || SHIELD_SWOOP_RIGHT
